@@ -19,3 +19,4 @@ After opening the project in IntelliJ:
 ✅ Developed in IntelliJ with Maven  
 ✅ Designed for CI553 coursework  
 ✅ Easy setup and clean structure
+.
