@@ -35,4 +35,16 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store# IntelliJ IDEA
+.idea/
+
+# Logs
+*.log
+derby.log
+
+# Local Derby database (generated)
+happyShopDB/
+*.lck
+
+# Optional runtime state
+orders/orderCounter.txt
