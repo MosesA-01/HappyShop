@@ -21,3 +21,7 @@ happyShopDB/
 
 # Optional runtime state
 orders/orderCounter.txt
+
+# Maven build output
+target/
+
