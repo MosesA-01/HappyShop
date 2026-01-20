@@ -9,7 +9,28 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * This test class is used to check the behaviour of the VIPOrder class.
+ *
+ * The aim of these tests is to make sure that VIP-specific rules,
+ * such as priority handling, work correctly after extending
+ * the original Order class.
+ *
+ * By testing VIPOrder separately, it helps confirm that new
+ * functionality has been added safely without breaking
+ * existing order behaviour.
+ */
+
 public class VIPOrderTest {
+
+    /**
+     * This test checks that a VIP order is treated as a priority order
+     * when the VIP level is high enough.
+     *
+     * In this case, a VIP level of 2 should result in the order
+     * being marked as priority, which reflects how higher-tier
+     * customers would be handled in a real retail system.
+     */
 
     @Test
     public void vipOrderShouldBePriorityWhenVipLevelIsHigh() {

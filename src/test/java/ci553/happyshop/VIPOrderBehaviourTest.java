@@ -9,7 +9,26 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Behaviour-based tests for the VIPOrder class.
+ *
+ * This class focuses on testing how a VIPOrder behaves in different
+ * situations rather than simply checking individual methods.
+ *
+ * The tests here verify both priority rules and how VIP-specific
+ * information is included in the order details output.
+ */
+
 public class VIPOrderBehaviourTest {
+
+    /**
+     * Checks that a VIP order is NOT treated as a priority order
+     * when the VIP level is low.
+     *
+     * This ensures that priority handling is only applied to
+     * higher-tier customers and that lower VIP levels behave
+     * the same as standard orders.
+     */
 
     @Test
     public void vipOrderShouldNotBePriorityWhenVipLevelIsLow() {
@@ -26,6 +45,15 @@ public class VIPOrderBehaviourTest {
 
         assertFalse(vipOrder.isPriority());
     }
+
+    /**
+     * Checks that VIP-related information is included in the
+     * order details output.
+     *
+     * This test ensures that when orderDetails() is called,
+     * the VIP level and discount information are correctly
+     * appended to the existing order summary.
+     */
 
     @Test
     public void orderDetailsShouldContainVipInformation() {
